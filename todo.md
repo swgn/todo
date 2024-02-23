@@ -1,11 +1,17 @@
 # 2024-02-24
 
 
+
+- [] review templates for harish, email in action folder
+
 - [] metabase - kept promise rate information for Rustam to build report
 - [] metabase - spin report for ynna
 
 - [] request use of `indebted.au` in netlify from pierre and team
   - [] add CNAME entry to point indebted.au to netlify deployment
+
+- [] request IT to add rules for contingent mailbox to sweep reminda.co emails into archive
+  - [x] ticket raised with IT to address.
 
 - [] Check placement load profiles - we should be setting `FILODEBTDUE` at initial load, updating only `FILDOD` on subsequent metadata updates
   - [x] VCEA 
@@ -26,6 +32,7 @@
 - [] ~ investigate better way to DO payments, pending or unconfirmed would be great. Get confirmed when payment is reconciled or verified (by Finance or client file)
 - [] ~ relax ID verification for deceased processing (Ravi)
 
+- [x] azra request for policies
 - [x] chase up desk #14740; dispatched today via ARAMAX
 - [x] update invite for team day on monday
 - [x] approve pending leave in employmenthero
