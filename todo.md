@@ -2,21 +2,23 @@
 
 - [] $ book dental appointment
 
-- [] review templates for harish, email in action folder
-- [] !!! ipSCAPE stamping duplicates, ask CJ to fix with Collexus
 - [] !!! Plug dialler stamping gap between 14 Feb PM and 19 Feb
-- [] !!! Reg notice file format for WISR
+- [] !!! ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy
+- [] !! ipSCAPE stamping duplicates, ask CJ to fix with Collexus
+
+- [] review templates for harish, email in action folder
 
 - [] Check-in with Ravi workload on DC portfolio
 
 - [] AXP letters of authority, updated with indebted trading name [Let Ravi know!]
 
-- [] test out new metabase server
-  - [] test slack integration
+- VESTONE reporting - IDEA = Could parse first part of email address and add as a note?
 
-- [] find and send AWS invoice for Jan to finance
+- [] implement automatic sweep of overnight files to client sftp directories
+  - [] Vestone
+  - [] AB
+  - [] Wisr? needed?
 
-- [] move reminda.com GH repo to indebted
 - [] close down netlify account
 - [] tell finance the netlify is closed down, do not expect bills
 
@@ -48,11 +50,22 @@
   - Streaming all the things
   - Check out use of JSON LINES
 
+- [] ~ test new metabase server's slack integration
 - [] ~ Review caro process for generating regulatory notices for WISR
-- [] ~ investigate better way to DO payments, pending or unconfirmed would be great. Get confirmed when payment is reconciled or verified (by Finance or client file)
-- [] ~ relax ID verification for deceased processing (Ravi)
+- [] ~ investigate better way to DO payments in Collexus, pending or unconfirmed would be great. Get confirmed when payment is reconciled or verified (by Finance or client file)
+- [] ~ relax ID verification for deceased processing (Ravi) Very hard to ID efficiently
 
+- [x] !!! Reg notice file format for WISR
+- [x] VCEA - Create overnight to show OB customer contacts (sms, email, call) `99.VC.009`
+- [x] VCEA - run report showing all activities since go-live
+- [x] find and send AWS invoice for Jan to finance
 - [x] find policy for policy review cycle, send to azra
+- [x] investigate fix issue with ABEA files not being closed after customer action
+- [x] create overnight closure report for ABEA
+- [x] create overnight closure report for VCEA
+- [x] chat with LEX about moving AXP liquidation into Legal CX groups, lockdown
+- [x] !!! move reminda.com GH repo to indebted
+- [-] test out new metabase server (migrated before I could test)
 
 # 2024-02-26
 
