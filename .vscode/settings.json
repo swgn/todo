@@ -1,4 +1,5 @@
 {
     "editor.fontSize": 18,
-    "editor.fontFamily": "\"Monospace Neon Var\",Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "\"Monospace Neon Var\",Consolas, 'Courier New', monospace",
+    "insertDateString.formatDate": "'#' o'W'W - YYYY-MM-DD",
 }

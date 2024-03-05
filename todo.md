@@ -1,14 +1,26 @@
-# 2024-02-27
+# 2024W10 - 2024-03-06
 
 - [] $ book dental appointment
+- [] $ book other appointment
 
-- [] !!! Plug dialler stamping gap between 14 Feb PM and 19 Feb
-- [] !!! ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy
-- [] !! ipSCAPE stamping duplicates, ask CJ to fix with Collexus
+- [] [!!!] ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy [wait for next release 2024-03-06]
+- [] [!!] AXP: complete TSM questionnaire (waiting on IT response)
 
-- [] review templates for harish, email in action folder
+- [] Dupe stamping - follow up CJ on 2024-03-08
 
-- [] Check-in with Ravi workload on DC portfolio
+- [] website: finish v1.0 site
+- [] rebrand: rebrand website for indebted
+
+- [] metabase: dermot add liquidation placement_level via updated ads report
+- [] metabase: kept promise rate information for Rustam to build report
+- [] metabase: spin report for ynna, document process
+
+- [] rebrand email template to send to customers (to be sent 2024-03-11)
+- [] rebrand sms template to send to customers (to be sent 2024-03-11)
+
+- [] cx: build new report for WISR for reg notices, using cxactivitylog table based on reg notice activity codes (see 99.VC.009)
+
+- [] review templates for harish (respond to email in action folder)
 
 - [] AXP letters of authority, updated with indebted trading name [Let Ravi know!]
 
@@ -17,15 +29,8 @@
 - [] implement automatic sweep of overnight files to client sftp directories
   - [] Vestone
   - [] AB
-  - [] Wisr? needed?
+  - [] Wisr
 
-- [] close down netlify account
-- [] tell finance the netlify is closed down, do not expect bills
-
-- [] ask about induction program for indebted, how much time expected?
-
-- [] metabase - kept promise rate information for Rustam to build report
-- [] metabase - spin report for ynna, document process
 
 - [] review non-HTML email templates in Collexus for rebrand
 
@@ -51,9 +56,48 @@
   - Check out use of JSON LINES
 
 - [] ~ test new metabase server's slack integration
-- [] ~ Review caro process for generating regulatory notices for WISR
+- [] ~ Review Caro process for generating regulatory notices for WISR
 - [] ~ investigate better way to DO payments in Collexus, pending or unconfirmed would be great. Get confirmed when payment is reconciled or verified (by Finance or client file)
 - [] ~ relax ID verification for deceased processing (Ravi) Very hard to ID efficiently
+
+- [] ~ merge AWS accounts instances with InDebted
+
+# 2024W10 - 2024-03-05
+
+- [x] add porcode filter to metabase report https://metabase.corp.cfmg.com.au/question/1109
+- [x] Add cname for static.indebted.au, same as static.reminda.com (S3 assets)
+- [x] [!!] ipSCAPE stamping duplicates, ask CJ to fix with Collexus
+- [x] [!] Fix VC PTP website emails sent back, references "WISR" incorrectly (code reminda.com)
+
+# 2024W10 - 2024-03-04
+
+- [x] [!!] review new NBN templates for CJ
+- [x] [!!!] Plug dialler stamping gap between 14 Feb PM and 19 Feb
+- [x] vestone activities report - add placement date?
+- [x] tell finance the netlify is closed down, do not expect bills
+- [x] downgrade netlify account to free tier
+- [x] create vscode snippet to add date tags for this file!
+- [x] generate and send updated VC activities report to DROSE, respond to email
+- [x] Check-in with Ravi workload on DC portfolio
+
+# 2024W09 - 2024-03-01
+
+- [x] send list of AXP hardship templates to Dermot to forward to Azra
+- [x] send slack note, cancel team day on 4 Mar for the time being
+- [x] respond to AXP audit date confirmation email (Val)
+
+# 2024W09 - 2024-02-29
+
+- [x] ask about induction program for indebted, how much time expected?
+
+# 2024-02-28
+
+- !! [x] send weekly DOM to AXP ~ week 8 stats
+- [x] requested a report from ipscape to provide missing data between 14 Feb and 21 Feb
+- [x] Respond to JM@WISR email, advise happy to test from 4 Mar
+- [x] metabase: dermot reporting broken report, recoveries mom
+
+# 2024-02-27
 
 - [x] !!! Reg notice file format for WISR
 - [x] VCEA - Create overnight to show OB customer contacts (sms, email, call) `99.VC.009`
