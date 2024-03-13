@@ -1,38 +1,52 @@
-# 2024W10 - 2024-03-06
+# 2024W11 - 2024-03-14
 
 - [] $ book dental appointment
 - [] $ book other appointment
 
 - [] [!!!] ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy [wait for next release 2024-03-06]
-- [] [!!] AXP: complete TSM questionnaire (waiting on IT response)
+
+- [] Find hardship templates to send to Dermot
+
+- [] [!!] Consolidate file adjustment profiles in CX
+  - ADJUST payment load profile (VC)
+  - [x] AB adjustment profile updated
+  - [] MP adjustments in janus?
+  - [x] updated for MADJUST for WISR
+  - [] update for DEBTADJUST_RS
+
+- [] ipSCAPE - refactor so abandoned calls are not stamped! see filcode 62595, campaign id 65jrf7727noc / leadId 91207 2024-03-11
+
+- [] #rebrand - overlap of policies on indebted.co website
+
+- [] Add LH to service desk on reminda.atlassian.net
+- [] Get LH access to github to manage email templates?
 
 - [] Dupe stamping - follow up CJ on 2024-03-08
 
-- [] website: finish v1.0 site
-- [] rebrand: rebrand website for indebted
+- [] #rebrand - website: finish v1.0 site
+- [] #rebrand - rebrand website for indebted
+- [] #rebrand - review non-HTML email templates in Collexus for rebrand
 
-- [] metabase: dermot add liquidation placement_level via updated ads report
-- [] metabase: kept promise rate information for Rustam to build report
-- [] metabase: spin report for ynna, document process
+- [] #rebrand - email template to send to customers (to be sent 2024-03-11)
+- [] #rebrand - sms template to send to customers (to be sent 2024-03-11)
 
-- [] rebrand email template to send to customers (to be sent 2024-03-11)
-- [] rebrand sms template to send to customers (to be sent 2024-03-11)
+- [] #rebrand - AXP letters of authority, updated with indebted trading name [Let Ravi know!]
+
+- [] janus: update AXP ads report, adding liquidation portfolios (email from AI)
+- [] janus: kept promise rate information for Rustam to build report
+- [] janus: spin report for ynna, document process
 
 - [] cx: build new report for WISR for reg notices, using cxactivitylog table based on reg notice activity codes (see 99.VC.009)
 
-- [] review templates for harish (respond to email in action folder)
-
-- [] AXP letters of authority, updated with indebted trading name [Let Ravi know!]
-
 - VESTONE reporting - IDEA = Could parse first part of email address and add as a note?
+
+- [] ISO 27001 programme - merge with InDebted?
+- [] ISO 9001 programme - merge with InDebted?
 
 - [] implement automatic sweep of overnight files to client sftp directories
   - [] Vestone
   - [] AB
   - [] Wisr
-
-
-- [] review non-HTML email templates in Collexus for rebrand
 
 - [] Check placement load profiles - we should be setting `FILODEBTDUE` at initial load, updating only `FILDOD` on subsequent metadata updates
   - [x] VCEA 
@@ -62,8 +76,27 @@
 
 - [] ~ merge AWS accounts instances with InDebted
 
+# 2024W11 - 2024-03-11
+
+- [x] [!!!] Fix AB closure report, you amended VC by mistake, should be AB! stupid
+
+# 2024W10 - 2024-03-08
+
+- [x] [!!!] ABLR closures, what is the logic?
+- [x] [!!!] AXP templates for Azra
+
+# 2024W10 - 2024-03-07
+
+- [x] [!!] AXP: complete TSM questionnaire (waiting on IT response)
+- [x] Load Harish legal email templates into Collexus
+- [-] metabase: dermot add liquidation placement_level via updated ads report
+
+# 2024W10 - 2024-03-06
+
+
 # 2024W10 - 2024-03-05
 
+- [x] review templates for harish (respond to email in action folder)
 - [x] add porcode filter to metabase report https://metabase.corp.cfmg.com.au/question/1109
 - [x] Add cname for static.indebted.au, same as static.reminda.com (S3 assets)
 - [x] [!!] ipSCAPE stamping duplicates, ask CJ to fix with Collexus
