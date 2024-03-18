@@ -1,27 +1,37 @@
-# 2024W11 - 2024-03-14
+# 2024W12 - 2024-03-18
 
 - [] $ book dental appointment
 - [] $ book other appointment
 
+- [] [!!!] WISR resolve pages
+
+- [] reminda/indebted letterhead template
+
+- [] XML generator for Harish/LPL
+
+- [] Add `cxactivitylog` table to janus
+
 - [] [!!!] ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy [wait for next release 2024-03-06]
 
-- [] Find hardship templates to send to Dermot
+- [] WISR reg notice process, understand better!
 
-- [] [!!] Consolidate file adjustment profiles in CX
-  - ADJUST payment load profile (VC)
+- [] [!!] Consolidate file adjustment profiles in CX. Use the ADJUST payment load profile as used for VC.
+
   - [x] AB adjustment profile updated
-  - [] MP adjustments in janus?
+  - [] MP adjustments in janus
+    - [] Move from ETL to janus
   - [x] updated for MADJUST for WISR
   - [] update for DEBTADJUST_RS
 
 - [] ipSCAPE - refactor so abandoned calls are not stamped! see filcode 62595, campaign id 65jrf7727noc / leadId 91207 2024-03-11
 
+- [] WISR - new resolve page(s): [webpay, eft, bpay] to reminda
+- [] WISR - overnight reporting, post-change only need DD reschedule report. Cancel others.
+
 - [] #rebrand - overlap of policies on indebted.co website
 
 - [] Add LH to service desk on reminda.atlassian.net
 - [] Get LH access to github to manage email templates?
-
-- [] Dupe stamping - follow up CJ on 2024-03-08
 
 - [] #rebrand - website: finish v1.0 site
 - [] #rebrand - rebrand website for indebted
@@ -38,32 +48,36 @@
 
 - [] cx: build new report for WISR for reg notices, using cxactivitylog table based on reg notice activity codes (see 99.VC.009)
 
-- VESTONE reporting - IDEA = Could parse first part of email address and add as a note?
+- [] Dupe stamping - follow up CJ on 2024-03-08
 
 - [] ISO 27001 programme - merge with InDebted?
 - [] ISO 9001 programme - merge with InDebted?
 
 - [] implement automatic sweep of overnight files to client sftp directories
+
   - [] Vestone
   - [] AB
   - [] Wisr
 
 - [] Check placement load profiles - we should be setting `FILODEBTDUE` at initial load, updating only `FILDOD` on subsequent metadata updates
-  - [x] VCEA 
+
+  - [x] VCEA
   - [] WISR:WREA
   - [] WISR
   - [] MP
   - [] RS
 
-- [] Retention of recordings, AXP want 2y8m years per CHC, we hold for only 2y (Maria, Lex) 
+- [] Retention of recordings, AXP want 2y8m years per CHC, we hold for only 2y (Maria, Lex)
+
   - Chaser email sent to Lex 2024-02-23
 
 - [] Add ttl to for dynamodb resolve table
 - [] Start enforcing ttl for dynamodb campaign table
 
-- [] Daily load process for CXLIVE is flawed because it us batch based, should really compare against last client file rather than against CX info. 
+- Daily load process for CXLIVE is flawed because it us batch based, should really compare against last client file rather than against CX info.
+
   - Issue: if a single file in a batch does not load, the logic to close files flags open CX files that do not exist in latest client file. If latest client file only contains updated error files, all other open files will incorrectly be flagged to closed.
-  - Could we compare record against record in latest client batch, treat each entry as an atomic element? If record is received and existed in last file received prior, then update/reconcile. If no record in previous file, 
+  - Could we compare record against record in latest client batch, treat each entry as an atomic element? If record is received and existed in last file received prior, then update/reconcile. If no record in previous file,
   - Would it simply make more sense to receive a closure report? Client tells us that the file is closed and provide a reason for closing?
   - Possible solution: forget metabase, parse client file and make imports directly. Can use API to check data from Collexus (live data). Can still load full client file into a metabase table, however generation of imports happens in deno, not metabase
   - Streaming all the things
@@ -76,9 +90,26 @@
 
 - [] ~ merge AWS accounts instances with InDebted
 
+- [x] janus - delete existing err file if found
+- [x] [!!] WISR new financial transactions file - implement load process for janus [2024-03-25]
+- [x] [!!] WISR new daily file - implement load process for janus [2024-03-25]
+- [x] send WISR load errors to James
+- [x] [!!!] WISR email templates, build is broken
+
+# 2024W11 - 2024-03-15
+
+- [x] Work out Github work vs private
+- [x] [!!!] Send digital operating metrics for 2024W10
+
+# 2024W11 - 2024-03-14
+
+- [x] cxfile - change format of fillastpayrevdateent to date
+- [x] Find hardship templates to send to Dermot
+
 # 2024W11 - 2024-03-11
 
 - [x] [!!!] Fix AB closure report, you amended VC by mistake, should be AB! stupid
+- [-] VESTONE reporting - IDEA = Could parse first part of email address and add as a note?
 
 # 2024W10 - 2024-03-08
 
@@ -92,7 +123,6 @@
 - [-] metabase: dermot add liquidation placement_level via updated ads report
 
 # 2024W10 - 2024-03-06
-
 
 # 2024W10 - 2024-03-05
 
