@@ -31,12 +31,18 @@ Questions:
 - Has a S88/6Q been issued?
 - Has 30 days elapsed since S88/6Q was issued?
 
-## Logic
+## Logic - New Files
 
 - If [new debt uploaded] and [client dpd > 24]: issue S88 notice (regardless of PORCODE)
+
 - If [debt = secured] and [balance > $10,000] and [days since S88 issuance > 34]: issue ITR notice
 - If [debt = secured] and [balance between $151 and $10,000] and [days since S88 issuance > 34]: issue 6Q notice
 - If [debt = secured] and ([days since ITR issuance> 34] OR [days since 6Q notice > 34]) and [client dpd > 94]: issue 21D notice AND move file to WISA porcode AND update outstanding balance = loan balance
 - If [debt = unsecured] and [days since s88 issuance > 34] and [balance > $150]: issue 6Q notice
 - If [debt = unsecured] and [days since 6Q issuance > 34]: issue 21D notice
 - If [debt = secured] and [days since 6Q notice > 34] and [client dpd > 94]: issue 21D notice AND move file to WIUA porcode AND update outstanding balance = loan balance
+
+## Logic - Old Files
+
+- 
+- How do we detect when a notice has been sent?

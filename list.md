@@ -1,1 +1,0 @@
-- [ ] add cname to point AWS cloudfront static assets

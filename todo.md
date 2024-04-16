@@ -1,56 +1,32 @@
-## Company KPIs
+# 2024W16 - 2024-04-16
 
-1. Achieve Revenue of $4,894,534 (Oct '23 - Jun '24).
-1. Achieve a Net Profit of $1,050,000 (Oct '23 - Jun '24).
-1. Achieve a Revenue Run Rate for FY25 of $7m by Jun '24.
-1. Co-Lead the name change of reminda to InDebted by EOM Mar '24 (April 8)
-1. Support the design and integration of key support teams to InDebted by EOM Jun '24
+- [ ] AXP audit - initial request - change management tab
+- [ ] AXP audit - initial request - approval letters tab
+- [ ] AXP audit - initial request - offboarding - waiting on Lex
+- [ ] list of AXP comms templates 1 Oct to 31 Mar (due 2024-03-22)
 
-## OKR
+- [ ] WISR reg notice process, finalise today
+- [ ] WISR RECALL file process..
 
-1. Publish a graph to track revenue day-on-day towards target
-1. Publish a graph to track net profit day-on-day towards target
-1. Publish a graph to track revenue run rate day-on-day towards target
+- [ ] BMS rebrand PDF export..
+- [ ] AXP Auditors catering for when in office
 
-# Notes
-
-# 2024W14 - 2024-04-02
-
-- Revenue Run Rate: Run Rate = Revenue in Period / # of Days in Period x 365
-
-- [ ] !!! respond to Ann @ MP re: Reg notices
-
-- [ ] Add all email templates to mercury
-
-- [ ] $ book dental appointment
-- [ ] $ book other appointment
-
-- [ ] WISR regulatory notices process, work with CM
-- [ ] WISR reg notice process, understand better!
+- [ ] Deceased email templates, better method for drafting... Review emails sent.
+- [ ] Ravi future of deceased portfolio actioning, Suzie was to discuss .
 
 - [ ] XML generator for Harish/LPL for garnishees (2024W13)
 
-- [ ] ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy [wait for next release 2024-03-06] !!!
-
-- [ ] list of AXP comms templates 1 Oct to 31 Mar (due 2024-03-22)
-
-- [ ] Set own OKRs: review company kpis and set own krs to break down. start scoring progress
+- [ ] !!! ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy [wait for next release 2024-03-06]
 
 - janus - better handling of duplicate files, log and prevent re/review each load
 - janus - create load files in a specific directory (source settings? or output?), bypass metabase
 
-- [ ] #rebrand - review non-HTML email templates in Collexus for rebrand
-- [ ] #rebrand - website: finish v1.0 site
-- [ ] #rebrand - rebrand website for indebted
-- [ ] #rebrand - email template to send to customers (to be sent ?)
-- [ ] #rebrand - sms template to send to customers (to be sent ?)
-- [ ] #rebrand - AXP letters of authority, updated with indebted trading name [Let Ravi know!]
-- [ ] #rebrand - overlap of policies on indebted.co website
+- [ ] AXP letters of authority, updated with indebted trading name [Let Ravi know!] +rebrand
 
 - [ ] Add `cxactivitylog` table to janus
 - [ ] Update LH permissions in GRC, allow access to press Reassess button
 
-- [ ] [!!] Consolidate file adjustment profiles in CX. Use the ADJUST payment load profile as used for VC.
+- [ ] !! Consolidate file adjustment profiles in CX. Use the ADJUST payment load profile as used for VC.
 
   - [x] AB adjustment profile updated
   - [ ] MP adjustments in janus
@@ -62,7 +38,6 @@
 
 - [ ] WISR - overnight reporting, post-change only need DD reschedule report. Cancel others.
 
-- [ ] Get LH access to github to manage email templates?
 - [ ] LH access to publish docs in Confluence
 
 - [ ] janus: update AXP ads report, adding liquidation portfolios (email from AI)
@@ -108,6 +83,7 @@
   - Streaming all the things
   - Check out use of JSON LINES
 
+- [ ] ~ Set own OKRs: review company kpis and set own krs to break down. start scoring progress
 - [ ] ~ test new metabase server's slack integration (it security issues potentially)
 - [ ] ~ investigate better way to DO payments in Collexus, pending or unconfirmed would be great. Get confirmed when payment is reconciled or verified (by Finance or client file)
 - [ ] ~ relax ID verification for deceased processing (Ravi) Very hard to ID efficiently
@@ -123,7 +99,57 @@
 <details>
 <summary>Completed items</summary>
 
+# 2024W16 - 2024-04-15
+
+- WISR reg notices, process near complete.. added UDF logic to existing queries
+
+# 2024W15 - 2024-04-12
+
+- [x] Load UDF content into Metabase to use in WISR reg notice processing
+- [x] Investigate MP load issues...
+
+# 2024W15 - 2024-04-11
+
+- [x] WISR reg notices, reengineer process
+
+# 2024W15 - 2024-04-10
+
+- [x] AXP audit - initial request - attorney involvement - waiting on Lex
+- [x] WISR regulatory notices process, work with CM
+
+# 2024W15 - 2024-04-09
+
+- [x] WISR email to JM about business rules for fees, client tacking onto next Direct Debit. How should we collect?
+- [-] Get LH access to github to manage email templates? (Azure is where it's at)
+
+# 2024W15 - 2024-04-08
+
+- [x] website: finish v1.0 site +rebrand :tada:
+
+- [-] overlap of policies on indebted.co website (not me) +rebrand
+- [x] email template to send to customers (to be sent ?) +rebrand
+- [x] sms template to send to customers (to be sent ?) +rebrand
+- [x] review non-HTML email templates in Collexus for rebrand +rebrand
+- [x] rebrand website for indebted +rebrand
+
+# 2024W14 - 2024-04-05
+
+- don't panic
+
+# 2024W14 - 2024-04-04
+
+- [x] WISR report to show CX files missing from INV (Closure Report)
+- [x] Process to close files on WISR Closure Report, CJ to provide cmd to use AWCR
+
+# 2024W14 - 2024-04-03
+
+- [x] WISR reg notice process, understand better!
+- [x] Add all email templates to mercury
+
 # 2024W14 - 2024-04-02
+
+- [x] !!! Add enhanced filcode regex to prod website +rebrand
+- [x] !!! respond to Ann @ MP re: Reg notices
 
 # 2024W13 - 2024-03-28
 
@@ -138,7 +164,7 @@
 
 # 2024W13 - 2024-03-26
 
-- [x] WISR - load new FINTXN entries?
+- [x] WISR - load new FINTXN entries? +wisr +janus
 
 # 2024W13 - 2024-03-25
 
