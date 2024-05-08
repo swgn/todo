@@ -1,20 +1,18 @@
-# 2024W16 - 2024-04-16
+# 2024W19 - 2024-05-08
 
-- [ ] AXP audit - initial request - change management tab
-- [ ] AXP audit - initial request - approval letters tab
+- [ ] Add TTL to resolve table in DynamoDB (resolve)
+
+- [ ] Fix sms for digital operting metrics
+- [ ] Fix sms for maria - compliance reporting
+
 - [ ] AXP audit - initial request - offboarding - waiting on Lex
-- [ ] list of AXP comms templates 1 Oct to 31 Mar (due 2024-03-22)
-
-- [ ] WISR reg notice process, finalise today
-- [ ] WISR RECALL file process..
-
-- [ ] BMS rebrand PDF export..
-- [ ] AXP Auditors catering for when in office
 
 - [ ] Deceased email templates, better method for drafting... Review emails sent.
 - [ ] Ravi future of deceased portfolio actioning, Suzie was to discuss .
 
 - [ ] XML generator for Harish/LPL for garnishees (2024W13)
+
+- [ ] Add `deno task pay` to main func for deno, run often/daily
 
 - [ ] !!! ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy [wait for next release 2024-03-06]
 
@@ -37,8 +35,6 @@
 - [ ] ipSCAPE - refactor so abandoned calls are not stamped! see filcode 62595, campaign id 65jrf7727noc / leadId 91207 2024-03-11
 
 - [ ] WISR - overnight reporting, post-change only need DD reschedule report. Cancel others.
-
-- [ ] LH access to publish docs in Confluence
 
 - [ ] janus: update AXP ads report, adding liquidation portfolios (email from AI)
 - [ ] janus: kept promise rate information for Rustam to build report
@@ -98,6 +94,39 @@
 
 <details>
 <summary>Completed items</summary>
+
+# 2024W19 - 2024-05-08
+
+- [x] AXP audit, outlook retention period
+- [x] AXP audit, redaction wording - explain delay with collexus redaction
+
+# 2024W18 - 2024-05-03
+
+- [x] Re-enable RESOLVE / event on website..
+
+# 2024W18 - 2024-04-30
+
+- [x] New data spec for Vestone Capital (due 01 May 2024)
+- [x] MERC account loading for AXP - raised with Alex
+
+# 2024W18 - 2024-04-29
+
+- [x] AXP audit - initial request - change management tab
+- [x] AXP audit - initial request - approval letters tab
+- [x] AWS update credit card info - billing failure!!!
+
+# 2024W17 - 2024-04-26
+
+- [x] WISR RECALL file process..
+
+# 2024W17 - 2024-04-23
+
+- [x] WISR reg notice process, finalise today
+
+# 2024W16 - 2024-04-19
+
+- [x] BMS rebrand PDF export..
+- [x] AXP Auditors catering for when in office
 
 # 2024W16 - 2024-04-15
 
