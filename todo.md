@@ -8,8 +8,6 @@
 - Date fix to zero seconds & milliseconds `new Date(new Date().setSeconds(0,0)).toISOString()`
 
 - [ ] Add secrets into deno-janus, aws and ezidebit
-- [ ] Add `deno task pay` to main func for deno, run often/daily
-- [x] Add `deno task web` to main func for deno, run often/daily
 
 - [ ] Fix sms for digital operating metrics
 - [ ] Fix sms for maria - compliance reporting
@@ -57,6 +55,8 @@
 
 # 2024W19 - 2024-05-10
 
+- [x] Add `deno task pay` to main func for deno, run often/daily
+- [x] Add `deno task web` to main func for deno, run often/daily
 - [>] (delegated) cx: build new report for WISR for reg notices, using cxactivitylog table based on reg notice activity codes (see 99.VC.009)
 - [>] (delegated) Dupe stamping - follow up CJ on 2024-03-08
 - [>] (delegated) janus: kept promise rate information for Rustam to build report
