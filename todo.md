@@ -1,28 +1,30 @@
-# 2024W19 - 2024-05-08
+# 2024W19 - 2024-05-10
 
-- [ ] Add TTL to resolve table in DynamoDB (resolve)
+- [ ] Load missing dialler webhooks from 5 May
+- [ ] WISR trust payment flags
+- [x] WISR closure process
+- [ ] WISR trust payments are being included in adjustx in error!
 
-- [ ] Fix sms for digital operting metrics
+- Date fix to zero seconds & milliseconds `new Date(new Date().setSeconds(0,0)).toISOString()`
+
+- [ ] Add secrets into deno-janus, aws and ezidebit
+- [ ] Add `deno task pay` to main func for deno, run often/daily
+- [x] Add `deno task web` to main func for deno, run often/daily
+
+- [ ] Fix sms for digital operating metrics
 - [ ] Fix sms for maria - compliance reporting
 
 - [ ] AXP audit - initial request - offboarding - waiting on Lex
 
-- [ ] Deceased email templates, better method for drafting... Review emails sent.
 - [ ] Ravi future of deceased portfolio actioning, Suzie was to discuss .
 
 - [ ] XML generator for Harish/LPL for garnishees (2024W13)
 
-- [ ] Add `deno task pay` to main func for deno, run often/daily
-
 - [ ] !!! ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy [wait for next release 2024-03-06]
-
-- janus - better handling of duplicate files, log and prevent re/review each load
-- janus - create load files in a specific directory (source settings? or output?), bypass metabase
 
 - [ ] AXP letters of authority, updated with indebted trading name [Let Ravi know!] +rebrand
 
 - [ ] Add `cxactivitylog` table to janus
-- [ ] Update LH permissions in GRC, allow access to press Reassess button
 
 - [ ] !! Consolidate file adjustment profiles in CX. Use the ADJUST payment load profile as used for VC.
 
@@ -32,26 +34,7 @@
   - [x] updated for MADJUST for WISR
   - [ ] update for DEBTADJUST_RS
 
-- [ ] ipSCAPE - refactor so abandoned calls are not stamped! see filcode 62595, campaign id 65jrf7727noc / leadId 91207 2024-03-11
-
-- [ ] WISR - overnight reporting, post-change only need DD reschedule report. Cancel others.
-
 - [ ] janus: update AXP ads report, adding liquidation portfolios (email from AI)
-- [ ] janus: kept promise rate information for Rustam to build report
-- [ ] janus: spin report for ynna, document process
-
-- [ ] cx: build new report for WISR for reg notices, using cxactivitylog table based on reg notice activity codes (see 99.VC.009)
-
-- [ ] Dupe stamping - follow up CJ on 2024-03-08
-
-- [ ] ISO 27001 programme - merge with InDebted?
-- [ ] ISO 9001 programme - merge with InDebted?
-
-- [ ] implement automatic sweep of overnight files to client sftp directories
-
-  - [ ] Vestone
-  - [ ] AB
-  - [ ] Wisr
 
 - [ ] Check placement load profiles - we should be setting `FILODEBTDUE` at initial load, updating only `FILDOD` on subsequent metadata updates
 
@@ -65,38 +48,54 @@
 
   - Chaser email sent to Lex 2024-02-23
 
-- [ ] Add ttl to for dynamodb resolve table
 - [ ] Start enforcing ttl for dynamodb campaign table
 
-- [ ] Add arr_con_au template to mercury (see ref 10041057 as example of send 2024-03-13)
+---
 
+<details>
+<summary>Completed items</summary>
+
+# 2024W19 - 2024-05-10
+
+- [>] (delegated) cx: build new report for WISR for reg notices, using cxactivitylog table based on reg notice activity codes (see 99.VC.009)
+- [>] (delegated) Dupe stamping - follow up CJ on 2024-03-08
+- [>] (delegated) janus: kept promise rate information for Rustam to build report
+- [>] (delegated) janus: spin report for ynna, document process
+- [>] (delegated) ipSCAPE - refactor so abandoned calls are not stamped! see filcode 62595, campaign id 65jrf7727noc / leadId 91207 2024-03-11
+- [x] WISR - overnight reporting, post-change only need DD reschedule report. Cancel others.
+- [-] Deceased email templates, better method for drafting... Review emails sent.
+- [-] Add arr_con_au template to mercury (see ref 10041057 as example of send 2024-03-13)
+- [x] Add ttl to for dynamodb resolve table
+- [-] ~ test out metabase rest API for running reports or accessing data
+- [-] ~ client reporting via SFTP automated via either CX run OR metabase API calls?
+- [-] ~ settlement tracker spreadsheet by admin should be moved to metabase
+- [-] ~ Set own OKRs: review company kpis and set own krs to break down. start scoring progress
+- [-] ~ test new metabase server's slack integration (it security issues potentially)
+- [-] ~ investigate better way to DO payments in Collexus, pending or unconfirmed would be great. Get confirmed when payment is reconciled or verified (by Finance or client file)
+- [x] WISR closure process
+- [>] (delegated) relax ID verification for deceased processing (Ravi) Very hard to ID efficiently
+- [>] (deletated) merge AWS accounts instances with InDebted
+- [-] janus - better handling of duplicate files, log and prevent re/review each load
+- [-] janus - create load files in a specific directory (source settings? or output?), bypass metabase
 - Daily load process for CXLIVE is flawed because it us batch based, should really compare against last client file rather than against CX info.
 
   - Issue: if a single file in a batch does not load, the logic to close files flags open CX files that do not exist in latest client file. If latest client file only contains updated error files, all other open files will incorrectly be flagged to closed.
   - Could we compare record against record in latest client batch, treat each entry as an atomic element? If record is received and existed in last file received prior, then update/reconcile. If no record in previous file,
   - Would it simply make more sense to receive a closure report? Client tells us that the file is closed and provide a reason for closing?
   - Possible solution: forget metabase, parse client file and make imports directly. Can use API to check data from Collexus (live data). Can still load full client file into a metabase table, however generation of imports happens in deno, not metabase
-  - Streaming all the things
+
+- [x] Streaming all the things (implemented in deno-janus)
   - Check out use of JSON LINES
+- [-] ISO 27001 programme - merge with InDebted?
+- [-] ISO 9001 programme - merge with InDebted?
 
-- [ ] ~ Set own OKRs: review company kpis and set own krs to break down. start scoring progress
-- [ ] ~ test new metabase server's slack integration (it security issues potentially)
-- [ ] ~ investigate better way to DO payments in Collexus, pending or unconfirmed would be great. Get confirmed when payment is reconciled or verified (by Finance or client file)
-- [ ] ~ relax ID verification for deceased processing (Ravi) Very hard to ID efficiently
+# 2024W19 - 2024-05-09
 
-- [ ] ~ test out metabase rest API for running reports or accessing data
-
-- [ ] ~ client reporting via SFTP automated via either CX run OR metabase API calls?
-
-- [ ] ~ merge AWS accounts instances with InDebted
-
-- [ ] ~ settlement tracker spreadsheet by admin should be moved to metabase
-
-<details>
-<summary>Completed items</summary>
+- [x] Update LH permissions in GRC, allow access to press Reassess button (Request raised, RSD-893)
 
 # 2024W19 - 2024-05-08
 
+- [x] Add TTL to resolve table in DynamoDB (resolve)
 - [x] AXP audit, outlook retention period
 - [x] AXP audit, redaction wording - explain delay with collexus redaction
 
