@@ -1,60 +1,73 @@
-# 2024W19 - 2024-05-10
+# 2024W20 - 2024-05-17 - final day with CFMG
 
-- [ ] Load missing dialler webhooks from 5 May
+- [ ] handover FATHOM analytics (Jason)
+
+- [ ] ipscape JANUS files, data from ipscape reporting, emailed each morning for previous day activities - handover!
+
+- [ ] Package up AXP comms template change control process.
+
+- [ ] Add logging local to operations/janus or direct to database for load issues/errors
+
+- [ ] CPE process for WISR daily new debts
+- [ ] Review WISR reconciliation process, fix!
+
 - [ ] WISR trust payment flags
-- [x] WISR closure process
 - [ ] WISR trust payments are being included in adjustx in error!
-
-- Date fix to zero seconds & milliseconds `new Date(new Date().setSeconds(0,0)).toISOString()`
-
-- [ ] Add secrets into deno-janus, aws and ezidebit
 
 - [ ] Fix sms for digital operating metrics
 - [ ] Fix sms for maria - compliance reporting
 
-- [ ] AXP audit - initial request - offboarding - waiting on Lex
-
-- [ ] Ravi future of deceased portfolio actioning, Suzie was to discuss .
-
-- [ ] XML generator for Harish/LPL for garnishees (2024W13)
-
-- [ ] !!! ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy [wait for next release 2024-03-06]
-
 - [ ] AXP letters of authority, updated with indebted trading name [Let Ravi know!] +rebrand
 
-- [ ] Add `cxactivitylog` table to janus
-
-- [ ] !! Consolidate file adjustment profiles in CX. Use the ADJUST payment load profile as used for VC.
-
-  - [x] AB adjustment profile updated
-  - [ ] MP adjustments in janus
-    - [ ] Move from ETL to janus
-  - [x] updated for MADJUST for WISR
-  - [ ] update for DEBTADJUST_RS
-
-- [ ] janus: update AXP ads report, adding liquidation portfolios (email from AI)
-
-- [ ] Check placement load profiles - we should be setting `FILODEBTDUE` at initial load, updating only `FILDOD` on subsequent metadata updates
-
-  - [x] VCEA
-  - [ ] WISR:WREA
-  - [ ] WISR
-  - [ ] MP
-  - [ ] RS
-
-- [ ] Retention of recordings, AXP want 2y8m years per CHC, we hold for only 2y (Maria, Lex)
+- [-] Retention of recordings, AXP want 2y8m years per CHC, we hold for only 2y (Maria, Lex)
 
   - Chaser email sent to Lex 2024-02-23
-
-- [ ] Start enforcing ttl for dynamodb campaign table
 
 ---
 
 <details>
 <summary>Completed items</summary>
 
+# 2024W20 - 2024-05-16
+
+- [x] ipscape emailed report each day - handover
+- [x] Process for raising client data load issues
+
+# 2024W20 - 2024-05-14
+
+- [-] Convert AB file to ZOD
+- Date fix to zero seconds & milliseconds `new Date(new Date().setSeconds(0,0)).toISOString()`
+- [-] (#wontdo) XML generator for Harish/LPL for garnishees (2024W13)
+- [x] Screen recording for adding a new page (shortlink) to website
+- [-] (use cxnote instead) Add `cxactivitylog` table to janus
+- [-] !! Consolidate file adjustment profiles in CX. Use the ADJUST payment load profile as used for VC.
+
+  - [x] AB adjustment profile updated
+  - [-] MP adjustments in janus
+    - [-] Move from ETL to janus
+  - [x] updated for MADJUST for WISR
+  - [-] update for DEBTADJUST_RS
+
+- [-] (delegated) AXP audit - initial request - offboarding - waiting on Lex
+
+- [-] Check placement load profiles - we should be setting `FILODEBTDUE` at initial load, updating only `FILDOD` on subsequent metadata updates
+  - [x] VCEA
+  - [x] WISR
+  - [-] MP
+  - [-] RS
+
+# 2024W20 - 2024-05-13
+
+- [-] janus: update AXP ads report, adding liquidation portfolios (email from AI)
+- [x] Add secrets into deno-janus, aws and ezidebit
+- [-] (delegated) Ravi future of deceased portfolio actioning, Suzie was to discuss .
+- [x] Load missing dialler webhooks from 5 May
+- [-] (delegated) !!! ipSCAPE issue with ph1 vs ph2 fields, investigate and remedy [wait for next release 2024-03-06]
+
 # 2024W19 - 2024-05-10
 
+- [x] WISR closure process
+- [x] Start enforcing ttl for dynamodb campaign table
 - [x] Add `deno task pay` to main func for deno, run often/daily
 - [x] Add `deno task web` to main func for deno, run often/daily
 - [>] (delegated) cx: build new report for WISR for reg notices, using cxactivitylog table based on reg notice activity codes (see 99.VC.009)
